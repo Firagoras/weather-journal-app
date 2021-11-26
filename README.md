@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an asynchronous web app that uses Web API (Open Weather API) and user input to dynamically update the UI.
+This project is an asynchronous web app that uses Web API (Open Weather API) and user inputs to dynamically update the UI.
 
 ## Development
 
@@ -18,6 +18,6 @@ Please note that the app accepts only numeric Zip codes. If you search for a Zip
 
 ### Example:
 
-94040 will fetch weather data for Mountain View in the USA
-67000,fr will fetch weather data for the city of Strasbourg in France
-E16AN,gb won't be accepted. Currently, this will trigger an error
+- **94040** will fetch weather data for Mountain View in the USA
+- **67000,fr** will fetch weather data for the city of Strasbourg in France
+- **E16AN,gb** won't be accepted. Currently, it will trigger an error
