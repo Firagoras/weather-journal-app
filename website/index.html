@@ -15,8 +15,8 @@
     </div>
 
     <div class="holder zip">
-      <label for="zip">Enter Zip code (Numeric only)</label>
-      <input type="text" id="zip">
+      <label for="zip">Enter a US Zip Code (Required)</label>
+      <input type="text" id="zip" placeholder="94040" pattern="[0-9]{5}" title="5-digit number" required>
     </div>
 
     <div class="holder feel">
@@ -25,6 +25,7 @@
     </div>
 
     <div class="holder generate">
+      <!-- <input type="submit" id="generate" value="Generate"> -->
       <button id="generate" type="submit">Generate</button>
     </div>
 

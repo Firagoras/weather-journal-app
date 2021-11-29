@@ -83,3 +83,7 @@ h2 {
   min-height: 120px;
   padding: 1em;
 }
+
+.invalid {
+  outline: 2px solid #f00;
+}
