@@ -1,4 +1,4 @@
-// Setup empty JS object to act as endpoint for all routes
+// Set up empty JS object to act as endpoint for all routes
 let projectData = {};
 
 // Require Express to run server and routes
@@ -7,8 +7,8 @@ const express = require('express');
 // Start up an instance of app
 const app = express();
 
-/* Dependencies */
-/* Middleware*/
+/* --- Dependencies --- */
+// Middleware
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
@@ -25,15 +25,16 @@ app.use(express.static('website'));
 // Server Setup
 const PORT = 3000;
 const server = app.listen(PORT, listening);
-// A function to produce a feedback to the Command Line with the server status and the port number
+
+// Function to produce a feedback to the Command Line consisting of the server status and the port number
 function listening() {
   console.log(`Server is running on localhost ${PORT}`);
 }
 
-// Set up a GET route with two arguments: route name and a callback function
+// Set up a GET route with two arguments: a route name and a callback function
 app.get('/getData', getData);
 
-// A function to send the endpoint data to the client side
+// Function to send the endpoint data to the client side
 function getData(req, res) {
   res.send(projectData);
 }
@@ -41,7 +42,7 @@ function getData(req, res) {
 // Set up a POST route with two arguments: a route name and a callback function
 app.post('/postData', postData);
 
-// A function to update the app endpoint using the data received from the client side.
+// Function to update the app endpoint in the server side using the data received from the client side.
 function postData(req, res) {
   projectData = {
     temperature: req.body.temperature,
