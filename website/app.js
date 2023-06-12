@@ -4,7 +4,7 @@
 */
 
 // Base URL for OpenWeatherMap API
-const baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip=';
+const baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
 
 // Personal API Key for OpenWeatherMap API
 const apiKey = '&appid=bca22b88e7dbaa3c3e19532a74f0380a&units=imperial';
